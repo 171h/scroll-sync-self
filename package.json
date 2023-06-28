@@ -1,7 +1,7 @@
 {
-  "name": "@171h/scroll-sync",
+  "name": "syncscroll",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.6.0",
   "description": "",
   "author": "171h <weiyidechicheng@outlook.com>",
