@@ -1,7 +1,7 @@
 {
   "name": "@171h/scroll-sync",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.6.0",
   "description": "",
   "author": "171h <weiyidechicheng@outlook.com>",
@@ -40,7 +40,7 @@
     "postinstall": "pnpm --filter=play postinstall",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && npm publish --access public",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
@@ -61,6 +61,8 @@
     "vitest": "^0.31.3"
   },
   "pnpm": {
-    "neverBuiltDependencies": ["fast-folder-size"]
+    "neverBuiltDependencies": [
+      "fast-folder-size"
+    ]
   }
 }
