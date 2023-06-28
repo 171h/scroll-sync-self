@@ -1,8 +1,8 @@
 # Scroll Sync
 
-![](https://img.shields.io/badge/version-0.1.8-blue?style=flat-square&logo)
-![](https://img.shields.io/badge/min%20%20size-1.99%20%20KB-brightgreen?style=flat-square&logo)
-![](https://img.shields.io/badge/gzip%20%20size-770%20%20B-brightgreen?style=flat-square&logo)
+![](https://img.shields.io/badge/version-${package.version}-blue?style=flat-square&logo)
+![](https://img.shields.io/badge/min%20%20size-${min.size}-brightgreen?style=flat-square&logo)
+![](https://img.shields.io/badge/gzip%20%20size-${gzip.size}-brightgreen?style=flat-square&logo)
 ![](https://img.shields.io/github/issues/kiccer/scroll-sync?style=flat-square&logo)
 ![](https://img.shields.io/github/forks/kiccer/scroll-sync?style=flat-square&logo)
 ![](https://img.shields.io/github/stars/kiccer/scroll-sync?style=flat-square&logo)
@@ -24,9 +24,9 @@ yarn add scroll-sync
 import ScrollSync from 'scroll-sync'
 
 const ss = new ScrollSync({
-  disabled: false, // [Boolean] Default value, allow to be empty.
-  relative: true, // [Boolean] Default value, allow to be empty.
-  doms: document.querySelectorAll('.scroll-container') // [Array] These elements must set scroll attributes.
+    disabled: false, // [Boolean] Default value, allow to be empty.
+    relative: true, // [Boolean] Default value, allow to be empty.
+    doms: document.querySelectorAll('.scroll-container') // [Array] These elements must set scroll attributes.
 })
 
 // do sth....
@@ -39,37 +39,7 @@ ss.set(document.querySelectorAll('.scroll-container'))
 
 // You can also actively clear the listener event and clear the cache.
 // ss.clear()
-```
 
-### API
-##### .add()
-// add elements to scroll-sync.
-```js
-ss.add(document.documentElement)
-// or use array.
-ss.add(document.querySelectorAll('.other-scroll-container'))
-```
-
-#### .remove()
-// remove elements to scroll-sync.
-```js
-ss.remove(document.documentElement)
-// or use array.
-ss.remove(document.querySelectorAll('.other-scroll-container'))
-```
-
-#### .set()
-// reset elements to scroll-sync.
-```js
-ss.set(document.documentElement)
-// or use array.
-ss.set(document.querySelectorAll('.other-scroll-container'))
-```
-
-#### .clear()
-// reset elements to scroll-sync.
-```js
-ss.clear()
 ```
 
 ## DOCUMENT
@@ -78,4 +48,3 @@ ss.clear()
 ## ABOUT
 This library is an additional product obtained from my actual work. Because I don’t use it frequently, I will not actively add any new functions except for necessary problem fixes. If you have any new function requirements, please Leave me a message in [`ISSUES`](https://github.com/kiccer/scroll-sync/issues) and I will help you achieve it in my spare time.
 <!-- 这个库是我实际工作中得到的额外产物，因为我自身使用它的频率并不高，所以除了必要的问题修复外我不会积极增加任何新的功能，如果你有任何新的功能需求，请在 `ISSUES` 中给我留言，我会在闲暇时间帮助你实现它。 -->
-
